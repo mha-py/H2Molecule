@@ -155,7 +155,7 @@ Python is a slow, script-based language. With packages such as Numba we are able
 us the opportunity to perform calculations directly on the GPU. By calculating more than one spectrum at a time, the calculation is accelerated by orders of magnitude.
 Method | Device | Batch size | Integration Speed
 -------|--------|----|------
-CPython | CPU | 1 | 98 it/s
+Python | CPU | 1 | 98 it/s
 PyTorch | CPU | 1 | 110 it/s
 PyTorch | GPU | 1 | 830 it/s
 PyTorch | GPU | 5 | 1200 it/s
@@ -163,4 +163,5 @@ PyTorch | GPU | 10 | 3700 it/s
 PyTorch | GPU | 100 | 5300 it/s
 PyTorch | GPU | 250 | 5500 it/s
 
-At the same time, it is not too difficult to write up PyTorch code to run on the GPU.
+At the same time, it is not too difficult to write up PyTorch code to run on the GPU. Here is the complete routine for the SFA calculations.<br>
+<img src="images_sonst/sfa_generation_comparison_small.png" width=400px>
